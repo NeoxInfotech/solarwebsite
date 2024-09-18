@@ -1,0 +1,89 @@
+@import "../../sass/mixin";
+@import "../../sass/var";
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  .desk-header {
+    min-height: 100px;
+    padding: 10px 40px;
+    background-color: #fff;
+    @include Flex-Between(0px, row);
+    .logo {
+      @include Flex-Normal(10px, row);
+      .logo-img {
+        height: 70px;
+      }
+      h2 {
+        @media (max-width: 500px) {
+          display: none;
+        }
+      }
+    }
+    .head-links {
+      @include Flex-Normal(20px, column);
+      align-items: start;
+      .contact {
+        @include Flex-Normal(18px, row);
+        h4 {
+          @include Flex-Normal(8px, row);
+          .c-mail,
+          .c-phone {
+            color: $background1;
+          }
+        }
+      }
+      .links {
+        @include Flex-Normal(25px, row);
+
+        .link {
+          text-decoration: none;
+          color: #000;
+          font-weight: 700;
+          font-size: 23px;
+        }
+      }
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    .menu {
+      display: none;
+      @media (max-width: 768px) {
+        display: flex;
+      }
+    }
+  }
+  .mobile-header {
+    display: none;
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+    z-index: 1;
+    right: 0;
+    background-color: $background1;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+    .link,
+    h4 {
+      color: #fff;
+      font-size: 22px;
+      text-decoration: none;
+      @include Flex-Normal(8px, row);
+      @media (max-width: 768px) {
+        font-size: 15px;
+      }
+      .c-mail,
+      .c-phone {
+        color: #fff;
+      }
+    }
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+}

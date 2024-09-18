@@ -1,0 +1,49 @@
+@import "../../../sass/mixin";
+@import "../../../sass/var";
+
+.card {
+  height: 350px;
+  max-height: 400px;
+  width: 20%;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 8px #ddd;
+  @include Flex-Normal(18px, column);
+  align-items: start;
+  color: #fff;
+  background-color: $background1;
+  @media (max-width: 1024px) {
+    width: 30%;
+  }
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+  .introimg {
+    height: 60px;
+    @media (max-width: 500px) {
+      height: 30px;
+    }
+  }
+
+  .readmore {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .arrow {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #000;
+    font-size: 20px;
+  }
+  .watermark {
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+  }
+}

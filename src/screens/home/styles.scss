@@ -1,0 +1,270 @@
+@import "../../sass/mixin";
+@import "../../sass/var";
+
+.home {
+  .hero {
+    padding: 0px 40px;
+    position: relative;
+    min-height: 100vh;
+    background: url("../../images/herobg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include Flex-Normal(25px, column);
+    align-items: start;
+    color: #fff;
+    @media (max-width: 768px) {
+      padding: 0px 20px;
+      min-height: 75vh;
+    }
+
+    h1 {
+      font-size: 70px;
+      text-wrap: balance;
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+    }
+    p {
+      font-size: 20px;
+      width: 70%;
+      @media (max-width: 768px) {
+        font-size: 15px;
+        width: 90%;
+      }
+    }
+    button {
+      @include buttons($background1, #fff);
+      font-size: 18px;
+    }
+    .down-arrow {
+      height: 40px;
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      @include updown;
+    }
+  }
+
+  .home-cards {
+    min-height: 50vh;
+    @include Flex-Normal(18px, row);
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    @media (max-width: 768px) {
+      padding: 20px 20px;
+    }
+  }
+  .about {
+    min-height: 80vh;
+    padding: 20px 40px;
+    @include Flex-Normal(20px, column);
+    align-items: start;
+    @media (max-width: 768px) {
+      padding: 20px 20px;
+    }
+    h1 {
+      @media (max-width: 768px) {
+        font-size: 25px;
+      }
+    }
+    .about-box {
+      width: 98%;
+      min-height: 40vh;
+      border-radius: 20px;
+      box-shadow: 2px 2px 8px #ddd;
+      display: flex;
+      @media (max-width: 768px) {
+        flex-direction: column-reverse;
+      }
+      .left {
+        width: 70%;
+        @include Flex-Normal(40px, column);
+        align-items: start;
+        padding-left: 20px;
+        @media (max-width: 768px) {
+          width: 90%;
+          padding: 30px 0px;
+          padding-left: 20px;
+        }
+        p {
+          padding-left: 30px;
+          border-left: 8px solid $background1;
+          width: 80%;
+          line-height: 30px;
+          font-size: 20px;
+          @media (max-width: 768px) {
+            font-size: 15px;
+            line-height: normal;
+          }
+        }
+        .know-more {
+          @include Flex-Normal(18px, row);
+          .arrow-right {
+            padding: 10px;
+            border-radius: 50%;
+            background: $background1;
+            color: #fff;
+          }
+        }
+      }
+      .right {
+        width: 30%;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        .img {
+          width: 100%;
+          height: 100%;
+          border-radius: 0px 20px 20px 0px;
+          @media (max-width: 768px) {
+            border-radius: 20px 20px 0px 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .services {
+    padding: 40px 40px;
+    justify-content: start;
+    @include Flex-Normal(20px, column);
+    align-items: start;
+    h1 {
+      @media (max-width: 768px) {
+        font-size: 25px;
+      }
+    }
+    @media (max-width: 768px) {
+      padding: 20px 20px;
+    }
+
+    .sub-head {
+      @include Flex-Between(0px, row);
+      width: 100%;
+      @media (max-width: 768px) {
+        @include Flex-Between(30px, column);
+      }
+      h4 {
+        width: 40%;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      .sub-butts {
+        @include Flex-Normal(20px, row);
+        button {
+          @include buttons(#000, #fff);
+          &:nth-child(2) {
+            border: 1px solid black;
+            background: white;
+            color: #000;
+          }
+        }
+      }
+    }
+    .cards {
+      min-height: 60vh;
+      @include Flex-Normal(50px, row);
+      flex-wrap: wrap;
+    }
+  }
+  .consult {
+    min-height: 80vh;
+    position: relative;
+    @include Flex-Normal(20px, column);
+    .img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      object-fit: fill;
+    }
+    h2 {
+      font-size: 50px;
+      color: #fff;
+      font-weight: 900;
+      @media (max-width: 768px) {
+        font-size: 30px;
+        padding: 0px 20px;
+      }
+    }
+    p {
+      color: #fff;
+      text-align: center;
+      font-size: 20px;
+      line-height: 30px;
+      @media (max-width: 768px) {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0px 20px;
+      }
+    }
+    button {
+      @include buttons($background1, #fff);
+      font-size: 20px;
+      @media (max-width: 950px) {
+        font-size: 15px;
+      }
+    }
+  }
+  .contact {
+    min-height: 100vh;
+    display: flex;
+    padding: 0px 40px;
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+      gap: 30px;
+      padding: 40px 20px;
+      min-height: auto;
+    }
+    .left,
+    .right {
+      width: 50%;
+      @include Flex-Normal(20px, column);
+      align-items: start;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      h2 {
+        @include Flex-Normal(6px, column);
+        align-items: start;
+        font-size: 40px;
+        span {
+          font-size: 16px;
+          color: $background1;
+        }
+      }
+      .form {
+        @include Flex-Normal(18px, column);
+        align-items: start;
+        width: 100%;
+        input,
+        textarea {
+          width: 80%;
+          padding: 15px;
+          outline: none;
+          border: none;
+          box-shadow: 1px 1px 8px #ddd;
+          @media (max-width: 950px) {
+            width: 90%;
+          }
+        }
+        button {
+          @include buttons($background1, #fff);
+        }
+      }
+      .frame {
+        width: 80%;
+        height: 80%;
+        outline: none;
+        border-radius: 20px;
+        @media (max-width: 950px) {
+          width: 100%;
+          min-height: 25vh;
+        }
+      }
+    }
+  }
+}
