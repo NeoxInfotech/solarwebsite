@@ -24,6 +24,10 @@
         background-color: $background1;
         color: #fff;
         font-size: 30px;
+        @media (max-width: 500px) {
+          padding: 8px;
+          font-size: 18px;
+        }
       }
       &:hover {
         background-color: #fff;
