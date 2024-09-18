@@ -13,6 +13,7 @@ const Menu = ({ setShowMenu }) => {
             <Link className='link' onClick={() => setShowMenu(false)}>CONTACT</Link>
             <h4><IoMailSharp className='c-mail' />yourgmail@gmail.com</h4>
             <h4><FaPhone className='c-phone' /> 91 800451234</h4>
+            <button>Get a quote</button>
 
         </div>
     )

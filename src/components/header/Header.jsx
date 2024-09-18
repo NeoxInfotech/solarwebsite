@@ -21,6 +21,7 @@ const Header = () => {
                     <div className="contact">
                         <h4><IoMailSharp className='c-mail' />yourgmail@gmail.com</h4>
                         <h4><FaPhone className='c-phone' /> 91 800451234</h4>
+                        <button>Get a quote</button>
                     </div>
                     <div className="links">
                         <Link className='link' to={"/"}>HOME</Link>

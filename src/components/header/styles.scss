@@ -34,6 +34,14 @@
             color: $background1;
           }
         }
+        button {
+          padding: 10px 20px;
+          background-color: #000;
+          color: #fff;
+          border-radius: 20px;
+          border: none;
+          outline: none;
+        }
       }
       .links {
         @include Flex-Normal(25px, row);
@@ -68,6 +76,17 @@
     justify-content: center;
     gap: 40px;
     flex-direction: column;
+    @media (max-width: 768px) {
+      display: flex;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+    }
     .link,
     h4 {
       color: #fff;
@@ -81,9 +100,6 @@
       .c-phone {
         color: #fff;
       }
-    }
-    @media (max-width: 768px) {
-      display: flex;
     }
   }
 }
