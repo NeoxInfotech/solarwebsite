@@ -1,0 +1,51 @@
+@import "../../../sass/mixin";
+@import "../../../sass/var";
+
+.chat-card {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  @include Flex-Normal(10px, row);
+  z-index: 1;
+  .chat-icon,
+  .chat-icon-cross {
+    padding: 15px;
+    background-color: #fff;
+    color: $background1;
+    z-index: 1;
+    font-size: 40px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px #000;
+    cursor: pointer;
+  }
+  .chat-icon-cross {
+    font-size: 20px;
+  }
+  .contact-box {
+    position: fixed;
+    bottom: 7%;
+    right: 7%;
+    height: 300px;
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 4px 4px 1px $background1;
+    @include Flex-Normal(20px, column);
+    transition: 1s;
+    img {
+      height: 40px;
+    }
+    .form {
+      @include Flex-Normal(16px, column);
+      input {
+        padding: 10px;
+        outline: none;
+        border: none;
+        box-shadow: 1px 1px 8px #ddd;
+      }
+      button {
+        @include buttons($background1, #fff);
+      }
+    }
+  }
+}

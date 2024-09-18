@@ -2,6 +2,39 @@
 @import "../../sass/var";
 
 .home {
+  .socials {
+    @include Flex-Normal(15px, column);
+    width: auto;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    .iconwrap {
+      background-color: $background1;
+      color: #000;
+      padding: 0px 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 20px 0px 0px 20px;
+
+      .icons {
+        padding: 15px;
+        border-radius: 50%;
+        background-color: $background1;
+        color: #fff;
+        font-size: 30px;
+      }
+      &:hover {
+        background-color: #fff;
+
+        .icons {
+          background: #fff;
+          color: $background1;
+        }
+      }
+    }
+  }
   .hero {
     padding: 0px 40px;
     position: relative;

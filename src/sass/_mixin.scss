@@ -19,6 +19,10 @@
   border: none;
   background-color: $back;
   color: $text;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
 }
 
 @mixin updown {

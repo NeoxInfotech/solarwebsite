@@ -6,13 +6,33 @@ import vid from "../../images/vid1.mp4"
 import Homecard from '../../components/cards/HomeCard/Homecard'
 import { cards, cards2 } from '../../data/data'
 import { GoArrowRight } from "react-icons/go";
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import ChatCard from '../../components/cards/chatCard/ChatCard'
 
 
 
 const Home = () => {
     return (
         <div className='home'>
+            <div className="socials">
+                <div className="iconwrap">
+                    <a href=""> <IoLogoWhatsapp className='icons' id='whatsapp' /></a>
+
+                </div>
+                <div className="iconwrap">
+                    <a href=""><FaFacebook className='icons' id='whatsapp' /></a>
+
+                </div>
+                <div className="iconwrap">
+                    <a href=""><MdEmail className='icons' id='whatsapp' /></a>
+
+                </div>
+
+            </div>
+            <ChatCard />
             <div className="hero">
                 <motion.h1 initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
