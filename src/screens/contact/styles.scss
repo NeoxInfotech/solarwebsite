@@ -1,0 +1,38 @@
+@import "../../sass/mixin";
+@import "../../sass/var";
+
+.contact {
+  .intro {
+    min-height: 90vh;
+    background: linear-gradient(#00000059, #00000063),
+      url("../../images/about-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    @include Flex-Normal(20px, column);
+    h1 {
+      font-size: 70px;
+      color: #fff;
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+    }
+    p {
+      width: 70%;
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      @media (max-width: 768px) {
+        width: 90%;
+        font-size: 15px;
+      }
+    }
+    .watermark {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40%;
+      opacity: 0.5;
+    }
+  }
+}

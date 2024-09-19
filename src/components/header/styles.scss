@@ -4,21 +4,33 @@
 .header {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 999;
+
+  .c-name {
+    span {
+      font-size: 10px;
+      font-weight: 800;
+    }
+  }
 
   .desk-header {
     min-height: 100px;
     padding: 10px 40px;
     background-color: #fff;
     @include Flex-Between(0px, row);
+    @media (max-width: 768px) {
+      padding: 10px 20px;
+    }
     .logo {
       @include Flex-Normal(10px, row);
       .logo-img {
         height: 70px;
       }
-      h2 {
-        @media (max-width: 500px) {
-          display: none;
+      .c-name {
+        span {
+          @media (max-width: 500px) {
+            display: none;
+          }
         }
       }
     }
@@ -50,7 +62,8 @@
           text-decoration: none;
           color: #000;
           font-weight: 700;
-          font-size: 23px;
+          font-size: 20px;
+          scroll-behavior: smooth;
         }
       }
       @media (max-width: 768px) {
@@ -93,6 +106,7 @@
       font-size: 22px;
       text-decoration: none;
       @include Flex-Normal(8px, row);
+      scroll-behavior: smooth;
       @media (max-width: 768px) {
         font-size: 15px;
       }

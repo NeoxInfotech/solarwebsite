@@ -8,11 +8,21 @@ import { motion } from 'framer-motion';
 
 const ChatCard = () => {
     const [openForm, setOpenForm] = useState(false)
+    const [raiseTicket, setRaiseTicket] = useState(false)
+
+    const handleticket = () => {
+        setOpenForm(false);
+        setRaiseTicket(true);
+    }
+    const closeCard = () => {
+        setOpenForm(false);
+        setRaiseTicket(false);
+    }
     return (
         <div className='chat-card'>
 
             {
-                openForm ? <motion.div
+                openForm && !raiseTicket ? <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{
@@ -21,16 +31,32 @@ const ChatCard = () => {
                     }}
                     className="contact-box">
                     <img src={imglogo} alt="" />
-                    <h4>Contact Wirh Me</h4>
+                    <h4>Contact With Me</h4>
                     <form className='form'>
                         <input type="text" placeholder=' Your Name' />
                         <input type="text" placeholder=' Your Contact' />
                         <input type="text" placeholder=' Your Query' />
                         <button>Message</button>
+                        <button onClick={handleticket}>Raise a Ticket</button>
                     </form>
                 </motion.div> : null
             }
-            {openForm ? <RxCross1 className="chat-icon-cross" onClick={() => setOpenForm(false)} /> : <RiChatSmile3Line className='chat-icon' onClick={() => setOpenForm(true)} />}
+            {
+                raiseTicket && !openForm ? <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="contact-box">
+                    <img src={imglogo} alt="" />
+                    <h4>Raise Ticket</h4>
+                    <form className='form'>
+                        <input type="text" placeholder=' Your Name' />
+                        <input type="number" placeholder=' Your Number' />
+                        <input type="text" placeholder=' Your Query' />
+                        <button>Message</button>
+                    </form>
+                </motion.div> : null
+            }
+            {openForm || raiseTicket ? <RxCross1 className="chat-icon-cross" onClick={closeCard} /> : <RiChatSmile3Line className='chat-icon' onClick={() => setOpenForm(true)} />}
         </div>
     )
 }

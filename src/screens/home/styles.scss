@@ -71,8 +71,8 @@
       }
     }
     button {
-      @include buttons($background1, #fff);
       font-size: 18px;
+      @include buttons($background1, #fff);
     }
     .down-arrow {
       height: 40px;
@@ -238,69 +238,10 @@
       }
     }
     button {
-      @include buttons($background1, #fff);
       font-size: 20px;
+      @include buttons($background1, #fff);
       @media (max-width: 950px) {
         font-size: 15px;
-      }
-    }
-  }
-  .contact {
-    min-height: 100vh;
-    display: flex;
-    padding: 0px 40px;
-    @media (max-width: 768px) {
-      flex-direction: column-reverse;
-      gap: 30px;
-      padding: 40px 20px;
-      min-height: auto;
-    }
-    .left,
-    .right {
-      width: 50%;
-      @include Flex-Normal(20px, column);
-      align-items: start;
-      @media (max-width: 768px) {
-        width: 100%;
-      }
-
-      h2 {
-        @include Flex-Normal(6px, column);
-        align-items: start;
-        font-size: 40px;
-        span {
-          font-size: 16px;
-          color: $background1;
-        }
-      }
-      .form {
-        @include Flex-Normal(18px, column);
-        align-items: start;
-        width: 100%;
-        input,
-        textarea {
-          width: 80%;
-          padding: 15px;
-          outline: none;
-          border: none;
-          box-shadow: 1px 1px 8px #ddd;
-          @media (max-width: 950px) {
-            width: 90%;
-          }
-        }
-        button {
-          @include buttons($background1, #fff);
-        }
-      }
-      .frame {
-        width: 80%;
-        height: 80%;
-        outline: none;
-        border-radius: 20px;
-        @media (max-width: 950px) {
-          width: 100%;
-          min-height: 25vh;
-        }
       }
     }
   }

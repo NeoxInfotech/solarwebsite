@@ -10,12 +10,18 @@ import { FaPhone } from "react-icons/fa6";
 
 const Header = () => {
     const [showmenu, setShowMenu] = useState(false)
+    const linkClick = () => {
+        window.scrollTo(0, 0)
+    }
     return (
         <div className='header'>
             <div className="desk-header">
                 <div className="logo">
                     <img src={solarlogo} alt="" className='logo-img' />
-                    <h2>Company Name</h2>
+                    <div className='c-name'>
+                        <h2>SSHM</h2>
+                        <span>Sri Sri Hareshwar Machinery Limited</span>
+                    </div>
                 </div>
                 <div className="head-links">
                     <div className="contact">
@@ -24,10 +30,10 @@ const Header = () => {
                         <button>Get a quote</button>
                     </div>
                     <div className="links">
-                        <Link className='link' to={"/"}>HOME</Link>
-                        <Link className='link'>ABOUT</Link>
-                        <Link className='link'>SERVICES</Link>
-                        <Link className='link'>CONTACT</Link>
+                        <Link className='link' to={"/"} onClick={linkClick}>HOME</Link>
+                        <Link className='link' to={"/about"} onClick={linkClick}>ABOUT</Link>
+                        <Link className='link' to={"/services"} onClick={linkClick}>SERVICES</Link>
+                        <Link className='link' to={"/contact"} onClick={linkClick}>CONTACT</Link>
                     </div>
                 </div>
                 <div className="menu">

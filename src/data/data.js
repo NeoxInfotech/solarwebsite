@@ -10,7 +10,7 @@ export const cards = [
         head: "Head Text",
         body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores doloribus doloremque laborum magnam quidem numquam beatae repellat. Doloremque vitae laborum in obcaecati? Veritatis optio obcaecati facilis repudiandae laboriosam officiis?",
         watermark: true,
-        bg: "#4aaa3e",
+        bg: "#5AA6D2",
         color: "#fff",
         buttsize: "20px",
         buttbg: "#fff",
@@ -24,7 +24,7 @@ export const cards = [
         bg: "#fff",
         color: "#000",
         buttsize: "20px",
-        buttbg: "#4aaa3e",
+        buttbg: "#5AA6D2",
         buttcolor: "#fff"
     },
     {
@@ -35,7 +35,7 @@ export const cards = [
         bg: "#fff",
         color: "#000",
         buttsize: "20px",
-        buttbg: "#4aaa3e",
+        buttbg: "#5AA6D2",
         buttcolor: "#fff"
     },
 ]
@@ -60,7 +60,7 @@ export const cards2 = [
         head: "Industrial System Installation",
         body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores doloribus doloremque laborum magnam quidem numquam beatae repellat. Doloremque vitae laborum in obcaecati? Veritatis optio obcaecati facilis repudiandae laboriosam officiis?",
         watermark: false,
-        bg: "#4aaa3e",
+        bg: "#5AA6D2",
         color: "#fff",
         buttsize: "15px",
         buttbg: "#fff",
@@ -70,6 +70,30 @@ export const cards2 = [
         id: 3,
         img: repair,
         head: "Repairing",
+        body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores doloribus doloremque laborum magnam quidem numquam beatae repellat. Doloremque vitae laborum in obcaecati? Veritatis optio obcaecati facilis repudiandae laboriosam officiis?",
+        watermark: false,
+        bg: "#fff",
+        color: "#000",
+        buttsize: "15px",
+        buttbg: "#000",
+        buttcolor: "#fff"
+    },
+    {
+        id: 4,
+        img: monitoring,
+        head: " Monitoring",
+        body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores doloribus doloremque laborum magnam quidem numquam beatae repellat. Doloremque vitae laborum in obcaecati? Veritatis optio obcaecati facilis repudiandae laboriosam officiis?",
+        watermark: false,
+        bg: "#fff",
+        color: "#000",
+        buttsize: "15px",
+        buttbg: "#000",
+        buttcolor: "#fff"
+    },
+    {
+        id: 5,
+        img: repair,
+        head: "Maintenance",
         body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores doloribus doloremque laborum magnam quidem numquam beatae repellat. Doloremque vitae laborum in obcaecati? Veritatis optio obcaecati facilis repudiandae laboriosam officiis?",
         watermark: false,
         bg: "#fff",

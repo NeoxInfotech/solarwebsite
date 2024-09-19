@@ -3,6 +3,9 @@ import Header from './components/header/Header'
 import { Route, Routes } from 'react-router-dom'
 import Home from './screens/home/Home'
 import Footer from './components/footer/Footer'
+import About from './screens/about/About'
+import Services from './screens/services/Services'
+import Contact from './screens/contact/Contact'
 
 const App = () => {
   return (
@@ -10,6 +13,9 @@ const App = () => {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </>
