@@ -48,6 +48,17 @@
         @include buttons($background1, #fff);
       }
     }
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        font-size: 22px;
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
+      }
+    }
     .frame {
       width: 80%;
       height: 80%;

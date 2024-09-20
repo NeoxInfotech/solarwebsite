@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="f-1">
                 <div className="detail">
                     <h3>Sri Sri Hareshwar Machinery Limited</h3>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloremque delectus necessitatibus nesciunt voluptatum consectetur illum doloribus eum modi corporis cumque, ut, aspernatur possimus ullam.</span>
+                    <span>As pioneers in the solar energy industry, Sri Sri Hareshwar Machinery Limited has been delivering high-quality, energy-efficient solar solutions for years. We specialize in providing tailored solar energy systems that meet the demands of both domestic and industrial sectors.</span>
                 </div>
                 <div className="links">
                     <Link className='link' to={"/"} onClick={linkClicks}>Home</Link>
@@ -19,10 +19,11 @@ const Footer = () => {
                     <Link className='link' to={"/services"} onClick={linkClicks}>Services</Link>
                 </div>
                 <div className="contact-details">
-                    <h4>Nameofperson</h4>
-                    <h4>Contact No - 800000000</h4>
-                    <h4>Email - Nameofperson@gmail.com</h4>
-                    <h4>Address, District, State, 12345</h4>
+                    <h4>SSHM</h4>
+                    <h4>Contact No - 7003813055</h4>
+                    <h4>Alt Contact No - 9735003739</h4>
+                    <h4>Email - rajpratip99@gmail.com</h4>
+                    <h4>110 Madhyapara Deulpur, Panchla, Howrah -711411</h4>
                 </div>
             </div>
             <div className="f-2">

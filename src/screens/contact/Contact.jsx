@@ -9,7 +9,7 @@ const Contact = () => {
             <ChatCard />
             <div className="intro">
                 <h1>Contact Us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non ipsam mollitia, alias tempora rerum quo quae eos dolore odit aliquid, minima aliquam adipisci ratione optio eius cupiditate cum perferendis.</p>
+                <p>Be a part of the renewable energy revolution! At Sri Sri Hareshwar Machinery Limited, we’re always looking for passionate individuals who share our vision for a sustainable future. Join our team and help us drive the change towards cleaner, greener energy for all.</p>
             </div>
             <ContactUs />
         </div>

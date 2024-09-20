@@ -61,6 +61,9 @@
       @media (max-width: 768px) {
         font-size: 40px;
       }
+      @media (max-width: 425px) {
+        font-size: 30px;
+      }
     }
     p {
       font-size: 20px;
@@ -69,9 +72,15 @@
         font-size: 15px;
         width: 90%;
       }
+      @media (max-width: 425px) {
+        font-size: 13px;
+        line-height: 16px;
+        width: 95%;
+      }
     }
-    button {
+    .button {
       font-size: 18px;
+      text-decoration: none;
       @include buttons($background1, #fff);
     }
     .down-arrow {
@@ -137,11 +146,13 @@
         }
         .know-more {
           @include Flex-Normal(18px, row);
+
           .arrow-right {
             padding: 10px;
             border-radius: 50%;
             background: $background1;
             color: #fff;
+            cursor: pointer;
           }
         }
       }
@@ -190,8 +201,9 @@
       }
       .sub-butts {
         @include Flex-Normal(20px, row);
-        button {
+        .button {
           @include buttons(#000, #fff);
+          text-decoration: none;
           &:nth-child(2) {
             border: 1px solid black;
             background: white;
@@ -237,7 +249,8 @@
         padding: 0px 20px;
       }
     }
-    button {
+    .button {
+      text-decoration: none;
       font-size: 20px;
       @include buttons($background1, #fff);
       @media (max-width: 950px) {

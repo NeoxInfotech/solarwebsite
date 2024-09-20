@@ -25,14 +25,15 @@ const Header = () => {
                 </div>
                 <div className="head-links">
                     <div className="contact">
-                        <h4><IoMailSharp className='c-mail' />yourgmail@gmail.com</h4>
-                        <h4><FaPhone className='c-phone' /> 91 800451234</h4>
+                        <h4><IoMailSharp className='c-mail' />rajpratip99@gmail.com</h4>
+                        <h4><FaPhone className='c-phone' /> 7003813055</h4>
                         <button>Get a quote</button>
                     </div>
                     <div className="links">
                         <Link className='link' to={"/"} onClick={linkClick}>HOME</Link>
                         <Link className='link' to={"/about"} onClick={linkClick}>ABOUT</Link>
                         <Link className='link' to={"/services"} onClick={linkClick}>SERVICES</Link>
+                        <Link className='link' to={"/blogs"} onClick={linkClick}>BLOGS</Link>
                         <Link className='link' to={"/contact"} onClick={linkClick}>CONTACT</Link>
                     </div>
                 </div>

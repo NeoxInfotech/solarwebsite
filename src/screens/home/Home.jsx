@@ -12,17 +12,21 @@ import { FaFacebook } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import ChatCard from '../../components/cards/chatCard/ChatCard'
 import ContactUs from '../../components/Contact/ContactUs'
+import { Link } from 'react-router-dom'
 
 
 
 const Home = () => {
+    const linkClicks = () => {
+        window.scrollTo(0, 0)
+    }
     return (
         <>
 
             <div className='home'>
                 <div className="socials">
                     <div className="iconwrap">
-                        <a href=""> <IoLogoWhatsapp className='icons' id='whatsapp' /></a>
+                        <a href="https://wa.me/+917003813055"> <IoLogoWhatsapp className='icons' id='whatsapp' /></a>
 
                     </div>
                     <div className="iconwrap">
@@ -39,12 +43,12 @@ const Home = () => {
                 <div className="hero">
                     <motion.h1 initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1 }}>Improving Solar  Energy <br /> Products</motion.h1>
+                        transition={{ duration: 1 }}>Sri Sri Hareshwar  <br />Machinery Limited</motion.h1>
                     <motion.p
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1 }}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis excepturi animi voluptate facere. Autem quisquam earum aut, numquam aperiam consequuntur ipsum! Consectetur, laborum distinctio.</motion.p>
-                    <button>Explore Now</button>
+                        transition={{ duration: 1 }}>Welcome to Sri Sri Hareshwar Machinery Limited, your trusted partner in sustainable energy solutions. As a leader in solar manufacturing and supply, we are dedicated to providing efficient and innovative solar energy systems for homes and industries.</motion.p>
+                    <Link to={"/services"} onClick={linkClicks} className='button'>Explore Now</Link>
                     <img loading='lazy' src={downarrow} alt="" className='down-arrow' />
                 </div>
                 <div className="home-cards">
@@ -57,18 +61,18 @@ const Home = () => {
                 <div className="about">
                     <motion.h1 initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1 }}>HEADING OF SECOND SCETION, ABOUT US</motion.h1>
+                        transition={{ duration: 1 }}>ABOUT US & OUR EXPERTISE</motion.h1>
                     <motion.h4 initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1.5 }}>SUB-HEADING OF SECOND SCETION, ABOUT US</motion.h4>
+                        transition={{ duration: 1.5 }}>we are the ideal choice for powering a greener future.</motion.h4>
                     <motion.div initial={{ opacity: 0, rotateY: 90 }}
                         whileInView={{ opacity: 1, rotateY: 0 }}
                         transition={{ duration: 1 }} className="about-box">
                         <div className="left">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard .Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard .simply dummy text of the printing and typesetting industry. </p>
+                            <p>At Sri Sri Hareshwar Machinery Limited, we are driven by a mission to harness the power of the sun for a sustainable tomorrow. Founded with the vision to lead the solar revolution in both domestic and industrial sectors, we specialize in the manufacturing and supply of high-quality solar systems. Our team combines years of experience, cutting-edge technology, and a deep commitment to renewable energy to deliver solutions that are both cost-effective and environmentally friendly. </p>
                             <div className="know-more">
                                 <h2>Know More</h2>
-                                <GoArrowRight className='arrow-right' />
+                                <Link to={"/about"} onClick={linkClicks}><GoArrowRight className='arrow-right' /></Link>
                             </div>
                         </div>
                         <div className="right">
@@ -77,12 +81,12 @@ const Home = () => {
                     </motion.div>
                 </div>
                 <div className="services">
-                    <h1>HEADING OF THIRD SECTION, CONSULT</h1>
+                    <h1>EXPERT SOLAR CONSULTING</h1>
                     <div className="sub-head">
-                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repudiandae cum fugit, odio enim nihil quae. Id, odio.</h4>
+                        <h4>Empowering your solar journey with tailored advice and innovative strategies.</h4>
                         <div className="sub-butts">
-                            <button>Learn More</button>
-                            <button>Get Started</button>
+                            <Link className='button' to={"/services"} onClick={linkClicks}>Learn More</Link>
+                            <Link className='button' to={"/contact"} onClick={linkClicks}>Get Started</Link>
                         </div>
                     </div>
                     <div className="cards">
@@ -97,10 +101,10 @@ const Home = () => {
                         <source src={vid} type="video/mp4" />
                     </video>
                     <h2>Consult With Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam aperiam, <br />impedit debitis ipsum aut ex doloribus at minima laboriosam vitae!</p>
-                    <button>Contact Now</button>
+                    <p>Our team combines years of experience, cutting-edge technology, and a deep commitment to renewable energy to deliver solutions that are both cost-effective and environmentally friendly. With a strong emphasis on quality, reliability, and customer satisfaction, we are proud to empower homes and businesses with clean energy.</p>
+                    <Link className='button' to={"/contact"} onClick={linkClicks}>Contact Now</Link>
                 </div>
-                <ContactUs />
+                <ContactUs formstate={true} />
             </div>
 
 

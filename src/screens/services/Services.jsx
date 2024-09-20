@@ -16,9 +16,9 @@ const Services = () => {
                     <source src={servicebg} type="video/mp4" />
                 </video>
                 <h1>Our Services</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae alias, neque harum obcaecati debitis assumenda? Expedita, mollitia. Sequi natus a distinctio fugit quae! Earum, voluptas ipsum. Earum nam veritatis blanditiis inventore asperiores magni quia totam delectus dignissimos, numquam fugit facere!</p>
+                <p>With a strong foundation built on trust, advanced technology, and environmental responsibility, our experienced team is dedicated to empowering communities and industries with reliable, renewable energy sources. </p>
             </div>
-            <div className="cards">
+            <div className="service-cards">
                 {
                     cards2.map((e) => (
                         <Homecard data={e} key={e.id} />
