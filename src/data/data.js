@@ -7,8 +7,8 @@ import monitoring from "../images/monitoring.png"
 export const cards = [
     {
         id: 1,
-        head: "State-of-the-Art Manufacturing Unit",
-        body: "Our facility is equipped with the latest technology and machinery to ensure the production of high-efficiency solar panels and components that meet international standards.",
+        head: "State-of-the-Art Supply Unit",
+        body: "Our facility is equipped with the latest technology and machinery to ensure the supply of high-efficiency solar panels and components that meet international standards.",
         watermark: true,
         bg: "#5AA6D2",
         color: "#fff",

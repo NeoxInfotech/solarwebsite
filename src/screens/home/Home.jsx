@@ -47,7 +47,7 @@ const Home = () => {
                     <motion.p
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1 }}>Welcome to Sri Sri Hareshwar Machinery Limited, your trusted partner in sustainable energy solutions. As a leader in solar manufacturing and supply, we are dedicated to providing efficient and innovative solar energy systems for homes and industries.</motion.p>
+                        transition={{ duration: 1 }}>Welcome to Sri Sri Hareshwar Machinery Limited, your trusted partner in sustainable energy solutions. As a leader in solar  supply, we are dedicated to providing efficient and innovative solar energy systems for homes and industries.</motion.p>
                     <Link to={"/services"} onClick={linkClicks} className='button'>Explore Now</Link>
                     <img loading='lazy' src={downarrow} alt="" className='down-arrow' />
                 </div>
@@ -69,7 +69,7 @@ const Home = () => {
                         whileInView={{ opacity: 1, rotateY: 0 }}
                         transition={{ duration: 1 }} className="about-box">
                         <div className="left">
-                            <p>At Sri Sri Hareshwar Machinery Limited, we are driven by a mission to harness the power of the sun for a sustainable tomorrow. Founded with the vision to lead the solar revolution in both domestic and industrial sectors, we specialize in the manufacturing and supply of high-quality solar systems. Our team combines years of experience, cutting-edge technology, and a deep commitment to renewable energy to deliver solutions that are both cost-effective and environmentally friendly. </p>
+                            <p>At Sri Sri Hareshwar Machinery Limited, we are driven by a mission to harness the power of the sun for a sustainable tomorrow. Founded with the vision to lead the solar revolution in both domestic and industrial sectors, we specialize in the  supply of high-quality solar systems. Our team combines years of experience, cutting-edge technology, and a deep commitment to renewable energy to deliver solutions that are both cost-effective and environmentally friendly. </p>
                             <div className="know-more">
                                 <h2>Know More</h2>
                                 <Link to={"/about"} onClick={linkClicks}><GoArrowRight className='arrow-right' /></Link>

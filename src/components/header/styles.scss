@@ -81,12 +81,13 @@
     display: none;
     position: fixed;
     width: 70%;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
     right: 0;
     background-color: $background1;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    padding-top: 120px;
     gap: 40px;
     flex-direction: column;
     @media (max-width: 768px) {

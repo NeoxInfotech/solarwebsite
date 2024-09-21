@@ -20,7 +20,7 @@ const About = () => {
                         <span>what we do</span>
                         <h2>Our Introduction</h2>
                     </div>
-                    <p>At Sri Sri Hareshwar Machinery Limited, we believe in the transformative power of solar energy. As one of the leading solar manufacturing and supply companies, we are committed to making renewable energy accessible to everyone. Whether you need a small system for your home or a large-scale industrial installation, we have the expertise, resources, and dedication to provide sustainable energy solutions that meet your unique needs. Our journey is powered by innovation, and our goal is to help our clients transition to a cleaner, greener future.</p>
+                    <p>At Sri Sri Hareshwar Machinery Limited, we believe in the transformative power of solar energy. As one of the leading solar  supply companies, we are committed to making renewable energy accessible to everyone. Whether you need a small system for your home or a large-scale industrial installation, we have the expertise, resources, and dedication to provide sustainable energy solutions that meet your unique needs. Our journey is powered by innovation, and our goal is to help our clients transition to a cleaner, greener future.</p>
                     <button>View More</button>
                 </div>
                 <div className="right">
