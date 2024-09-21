@@ -24,7 +24,7 @@ const ContactUs = ({ formstate }) => {
 
             </div>
             <div className="right">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3688.46658481754!2d87.8644411!3d22.411457799999997!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1726645264480!5m2!1sen!2sin" className='frame'></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d58926.080858404595!2d88.20442486843362!3d22.62095387021692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s110%20Madhyapara%20Deulpur%2C%20Panchla%2C%20Howrah%20-711411!5e0!3m2!1sen!2sin!4v1726921654302!5m2!1sen!2sin" className='frame'></iframe>
             </div>
         </div>
     )
