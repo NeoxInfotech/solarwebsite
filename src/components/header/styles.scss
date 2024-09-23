@@ -23,6 +23,8 @@
     }
     .logo {
       @include Flex-Normal(10px, row);
+      color: #000;
+      text-decoration: none;
       .logo-img {
         height: 70px;
       }

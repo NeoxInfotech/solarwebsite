@@ -27,7 +27,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="f-2">
-                <h4>Designed and developed by NeoxInfotech © All Copyright reserved 2024</h4>
+                <h4>Designed and developed by <a href="https://neoxinfotech.com/">NeoxInfotech</a>  © All Copyright reserved 2024</h4>
             </div>
         </div>
     )

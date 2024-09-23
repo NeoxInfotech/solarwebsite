@@ -16,13 +16,13 @@ const Header = () => {
     return (
         <div className='header'>
             <div className="desk-header">
-                <div className="logo">
+                <Link to={"/"} className="logo">
                     <img src={solarlogo} alt="" className='logo-img' />
                     <div className='c-name'>
                         <h2>SSHM</h2>
                         <span>Sri Sri Hareshwar Machinery Limited</span>
                     </div>
-                </div>
+                </Link>
                 <div className="head-links">
                     <div className="contact">
                         <h4><IoMailSharp className='c-mail' />rajpratip99@gmail.com</h4>
