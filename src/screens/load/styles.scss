@@ -1,0 +1,109 @@
+@import "../../sass/mixin";
+@import "../../sass/var";
+
+.loadcalculator {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .intro {
+    min-height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(#0000005b, #0000002d),
+      url("../../images/blogimg1.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+
+    @include Flex-Normal(12px, column);
+    align-items: start;
+    h2 {
+      padding-left: 40px;
+      font-size: 40px;
+      @media (max-width: 500px) {
+        padding-left: 20px;
+      }
+    }
+    span {
+      padding-left: 40px;
+      @media (max-width: 500px) {
+        padding-left: 20px;
+      }
+    }
+  }
+  .calculator {
+    width: 60%;
+    margin-top: 50px;
+    padding: 30px 0px;
+    @media (max-width: 768px) {
+      width: 80%;
+    }
+    @media (max-width: 500px) {
+      width: 90%;
+    }
+    @include Flex-Normal(20px, column);
+    .tablewrapper {
+      width: 100%;
+      overflow-x: auto;
+    }
+    .table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+
+      th {
+        background-color: #3f96cc;
+        color: #fff;
+        min-width: 90px;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 8px 10px;
+        p {
+          margin: 5px 0px;
+        }
+        input {
+          padding: 5px;
+          margin-bottom: 8px;
+        }
+        button {
+          padding: 4px;
+          outline: none;
+          border: none;
+          color: #fff;
+          background: #6386ee;
+        }
+      }
+      td {
+        border: 1px solid #ddd;
+      }
+      select {
+        border: none;
+        padding: 10px;
+        border-radius: 16px;
+        color: #fff;
+        background-color: #3f96cc;
+      }
+    }
+    .custom-watt {
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      input {
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+        background-color: none;
+        border-bottom: 1px solid #ddd;
+      }
+      button {
+        @include buttons($background1, #fff);
+      }
+    }
+  }
+}

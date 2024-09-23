@@ -104,3 +104,32 @@ export const cards2 = [
     },
 
 ]
+
+
+
+// Initial appliance list with predefined watt options
+export const initialAppliances = [
+    { name: "PC / Laptop", options: [100, 200, 300, 400, 500] },
+    { name: "Microwave Oven", options: [700, 1000, 1200, 1500] },
+    { name: "Mixer / Grinder", options: [500, 600, 700] },
+    { name: "Bulb", options: [15, 25, 40, 60, 100] },
+    { name: "Air Conditioner (AC)", options: [1000, 1500, 2000, 2500, 3000] },
+    { name: "Refrigerator", options: [100, 150, 200, 250, 300] },
+    { name: "Ceiling Fan", options: [50, 60, 70, 80] },
+    { name: "Table Fan", options: [40, 50, 60] },
+    { name: "Water Heater", options: [1500, 2000, 2500] },
+    { name: "Electric Iron", options: [500, 750, 1000, 1500] },
+    { name: "Washing Machine", options: [500, 750, 1000, 1500, 2000] },
+    { name: "Television", options: [100, 150, 200, 250, 300] },
+    { name: "Toaster", options: [800, 1000, 1200, 1500] },
+    { name: "Electric Kettle", options: [1000, 1500, 2000] },
+    { name: "Room Heater", options: [1000, 1500, 2000, 2500] },
+    { name: "Hair Dryer", options: [1000, 1200, 1500, 2000] },
+    { name: "Dishwasher", options: [1200, 1500, 1800, 2000] },
+    { name: "Oven", options: [1000, 1200, 1500, 1800] },
+    { name: "Printer", options: [50, 100, 150, 200] },
+    { name: "Vacuum Cleaner", options: [500, 600, 700, 1000] },
+    { name: "Gaming Console", options: [200, 300, 400] },
+    { name: "Sound System", options: [100, 200, 300] },
+    { name: "Router", options: [10, 15, 20] }
+];

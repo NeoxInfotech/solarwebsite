@@ -9,6 +9,7 @@ import Contact from './screens/contact/Contact'
 import Blog from './screens/blogs/Blog'
 import SingleBlog from './screens/singleblog/SingleBlog'
 import Loading from './components/loader/Loading'
+import LoadCalculator from './screens/load/LoadCalculator'
 
 const App = () => {
   const [loader, setLoader] = useState(true)
@@ -28,6 +29,7 @@ const App = () => {
             <Route path='/services' element={<Services />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/blogs' element={<Blog />} />
+            <Route path='/loadcalculator' element={<LoadCalculator />} />
             <Route path='/blog/:id' element={<SingleBlog />} />
           </Routes>
           <Footer />
