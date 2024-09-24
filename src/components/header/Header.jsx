@@ -34,8 +34,8 @@ const Header = () => {
                         <Link className='link' to={"/about"} onClick={linkClick}>ABOUT</Link>
                         <Link className='link' to={"/services"} onClick={linkClick}>SERVICES</Link>
                         <Link className='link' to={"/blogs"} onClick={linkClick}>BLOGS</Link>
-                        <Link className='link' to={"/loadcalculator"} onClick={linkClick}>LOAD</Link>
                         <Link className='link' to={"/contact"} onClick={linkClick}>CONTACT</Link>
+                        <Link className='load' to={"/loadcalculator"} onClick={linkClick}>LOAD</Link>
                     </div>
                 </div>
                 <div className="menu">

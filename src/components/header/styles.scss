@@ -71,6 +71,12 @@
       @media (max-width: 768px) {
         display: none;
       }
+      .load {
+        @include buttons($background1, #fff);
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: 800;
+      }
     }
     .menu {
       display: none;
@@ -117,6 +123,11 @@
       .c-phone {
         color: #fff;
       }
+    }
+    .load {
+      @include buttons(#000, #fff);
+      text-decoration: none;
+      border-radius: 20px;
     }
   }
 }

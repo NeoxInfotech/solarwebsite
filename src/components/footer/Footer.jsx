@@ -1,6 +1,8 @@
 import React from 'react'
 import "./styles.scss"
 import { Link } from 'react-router-dom'
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
     const linkClicks = () => {
@@ -17,6 +19,15 @@ const Footer = () => {
                     <Link className='link' to={"/"} onClick={linkClicks}>Home</Link>
                     <Link className='link' to={"/about"} onClick={linkClicks}>About</Link>
                     <Link className='link' to={"/services"} onClick={linkClicks}>Services</Link>
+                    <a href="https://wa.me/+917003813055" className="socials">
+                        <IoLogoWhatsapp />
+                        <h4>Whatsapp</h4>
+                    </a>
+                    <a href='https://www.facebook.com/profile.php?id=61559571530270&mibextid=ZbWKwL' className="socials">
+                        <FaFacebook />
+                        <h4>Facebook</h4>
+
+                    </a>
                 </div>
                 <div className="contact-details">
                     <h4>SSHM</h4>
