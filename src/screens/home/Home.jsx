@@ -30,7 +30,7 @@ const Home = () => {
 
                     </div>
                     <div className="iconwrap">
-                        <a href=""><FaFacebook className='icons' id='whatsapp' /></a>
+                        <a href="https://www.facebook.com/profile.php?id=61559571530270&mibextid=ZbWKwL"><FaFacebook className='icons' id='whatsapp' /></a>
 
                     </div>
                     <div className="iconwrap">
